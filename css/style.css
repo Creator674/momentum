@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  background-size: cover;
+  color: #000000;
+  margin: 0px;
+  width: 100vw;
+  background-position: center center;
+  transition: background-image 1s ease-in-out;
+}
+
+.time {
+  font-size: 5rem;
+}
+
+h1 {
+  margin-bottom: 3rem;
+}
+
+.weather-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather-line {
+  display: flex;
+}
+
+.temperature {
+  margin-left: 5px;
+}
+
+.weather-description {
+  margin-left: 5px;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+  opacity: 0.8;
+}
+.control--button {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(100,100,100,0.5);
+    border-radius: 25%;
+    border: 0;
+    color: blanchedalmond;
+}
+
+.advice {
+  margin-top: 50px;
+}
+
+.weather-info {
+  margin-top: 50px;
+}
+
+@media (max-width: 830px) {
+  .time {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .time {
+    font-size: 3rem;
+  }
+}
+.city:hover, .focus:hover, .name:hover {
+  cursor: pointer;
+}
+
+.control--button {
+  width: 60px;
+  height: 60px;
+  border: 0;
+  filter: grayscale(1);
+  margin: 10px;
+}
+
+.control--button:hover {
+  filter: grayscale(.8);
+  cursor: pointer;
+}
+
+.control--button:active,
+.control--button:focus {
+  outline: 0;
+}
+
+.control--button:active{
+  transform: scale(1.02)
+}
